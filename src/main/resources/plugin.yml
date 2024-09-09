@@ -1,0 +1,19 @@
+main: pp.wolfpack.PruebaPreguntas
+version: 0.0.2a
+name: PruebaPreguntas
+author: wolfpack
+api-version: 1.13
+
+commands:
+  añadirpregunta:
+    description: Añade una nueva pregunta con alternativas.
+    usage: /añadirpregunta <pregunta> <alternativa1> <alternativa2> <alternativa3> <respuestaCorrecta>
+    permission: pruebapreguntas.admin
+    permission-message: No tienes permiso para usar este comando.
+  permissions:
+    pruebapreguntas.admin:
+      description: Permite añadir nuevas preguntas
+      default: op
+  respuesta:
+    description: Responde a la pregunta para abrir la puerta.
+    usage: /respuesta <respuesta>
